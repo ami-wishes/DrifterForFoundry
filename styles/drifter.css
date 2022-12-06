@@ -1,0 +1,40 @@
+
+.hsort {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    flex-grow: 0;
+}
+
+.vsort {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex-grow: 0;
+}
+
+.statblock {
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    flex-grow: 0;
+    align-items: center;
+}
+
+.statblock-section {
+    width: 90px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex-grow: 0;
+    align-items: center;
+}
+
+.grow {
+    flex-grow: 1;
+}
+
+.center {
+    align-items: center;
+}

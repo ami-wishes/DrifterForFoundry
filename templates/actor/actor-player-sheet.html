@@ -1,0 +1,78 @@
+<form class="{{cssClass}} {{actor.type}} flexcol" autocomplete="off">
+    <div class="hsort">
+        <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="100" width="100"/>
+
+        <div class="grow">
+            <label for="name" class="resources-label">NAME</label>
+            <input type="text" name="name" value="{{actor.name}}" placeholder="Name">
+            <label for="class" class="resources-label">CLASS</label>
+            <div class="hsort center">
+                <input type="text" name="class" value="{{actor.class}}" placeholder="Class" style="flex-grow: 1">
+                <label for="system.stats.grit" style="flex-grow: 0">GRIT</label>
+                <input type="text" name="system.stats.grit" value="{{system.stats.grit}}" data-dtype="Number" style="flex-grow: 0"/>
+                <label for="system.stats.nerve" style="flex-grow: 0">NERVE</label>
+                <input type="text" name="system.stats.nerve" value="{{system.stats.nerve}}" data-dtype="Number" style="flex-grow: 0"/>
+            </div>
+        </div>
+
+        <div class="resources grid grid-2col">
+            <div class="hsort center">
+                <label for="system.living.health.value" class="resource-label">HEALTH</label>
+                <input type="text" name="system.living.health.value" value="{{system.living.health.value}}" data-dtype="Number"/>
+                <span> / </span>
+                <input type="text" name="system.living.health.max" value="{{system.living.health.max}}" data-dtype="Number"/>
+            </div>
+            <div class="hsort center">
+                <label for="system.living.energy.value" class="resource-label">ENERGY</label>
+                <input type="text" name="system.living.energy.value" value="{{system.living.energy.value}}" data-dtype="Number"/>
+                <span> / </span>
+                <input type="text" name="system.living.energy.max" value="{{system.living.energy.max}}" data-dtype="Number"/>
+            </div>
+        </div>
+    </div>
+
+    {{!-- Stats --}}
+    <div class="statblock">
+        <div class="grow"></div>
+        <div class="statblock-section">
+            <label for="system.stats.combat">COMBAT</label>
+            <div class="hsort center">
+                <input type="text" name="system.stats.combat-high" value="{{system.stats.combat-high}}" data-dtype="Number">
+                <input type="text" name="system.stats.combat-low" value="{{system.stats.combat-low}}" data-dtype="Number">
+            </div>
+        </div>
+        <div class="statblock-section">
+            <label for="system.stats.combat">SOCIAL</label>
+            <div class="hsort center">
+                <input type="text" name="system.stats.social-high" value="{{system.stats.social-high}}" data-dtype="Number">
+                <input type="text" name="system.stats.social-low" value="{{system.stats.social-low}}" data-dtype="Number">
+            </div>
+        </div>
+        <div class="statblock-section">
+            <label for="system.stats.combat">MANIPULATE</label>
+            <div class="hsort center">
+                <input type="text" name="system.stats.manip-high" value="{{system.stats.manip-high}}" data-dtype="Number">
+                <input type="text" name="system.stats.manip-low" value="{{system.stats.manip-low}}" data-dtype="Number">
+            </div>
+        </div>
+        <div class="statblock-section">
+            <label for="system.stats.combat">EXPLORATION</label>
+            <div class="hsort center">
+                <input type="text" name="system.stats.explore-high" value="{{system.stats.explore-high}}" data-dtype="Number">
+                <input type="text" name="system.stats.explore-low" value="{{system.stats.explore-low}}" data-dtype="Number">
+            </div>
+        </div>
+        <div class="statblock-section">
+            <label for="system.stats.combat">SURVIVAL</label>
+            <div class="hsort center">
+                <input type="text" name="system.stats.survival-high" value="{{system.stats.survival-high}}" data-dtype="Number">
+                <input type="text" name="system.stats.survival-low" value="{{system.stats.survival-low}}" data-dtype="Number">
+            </div>
+        </div>
+        <div class="grow"></div>
+    </div>
+
+
+    <div class="grow"></div>
+
+</form>

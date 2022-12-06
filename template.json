@@ -1,0 +1,55 @@
+{
+  "Actor": {
+    "types": [
+      "player",
+      "enemy"
+    ],
+    "templates": {
+      "living": {
+        "health": {
+          "min": 0,
+          "value": 10,
+          "max": 10
+        },
+        "energy": {
+          "min": 0,
+          "value": 10,
+          "max": 10
+        }
+      }
+    },
+    "player": {
+      "templates": [
+        "living"
+      ],
+      "stats": {
+        "grit":0,
+        "nerve":0,
+        "combat-low":10,
+        "combat-high":18,
+        "social-low":10,
+        "social-high":18,
+        "manip-low":10,
+        "manip-high":18,
+        "explore-low":10,
+        "explore-high":18,
+        "survival-low":10,
+        "survival-high":18
+      }
+    },
+    "enemy<": {
+      "templates": [
+        "living"
+      ],
+      "stats": {
+        "CL": {
+          "min": 0,
+          "value": 1,
+          "max": 10
+        }
+      }
+    }
+  },
+  "Item": {
+  }
+}
